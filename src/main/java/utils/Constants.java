@@ -1,5 +1,5 @@
 package utils;
 
-public interface Const {
+public interface Constants {
     String url="https://freecrm.com/";
 }

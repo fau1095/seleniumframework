@@ -24,7 +24,7 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import utils.Const;
+import utils.Constants;
 
 public class BaseTest {
 public static WebDriver driver;
@@ -53,7 +53,7 @@ public void beforeMethodMethod(String browser, Method tesMethod)
     logger= extent.createTest(tesMethod.getName());
     setupDriver(browser);
     driver.manage().window().maximize();
-    driver.get(Const.url);
+    driver.get(Constants.url);
     driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 }
 
